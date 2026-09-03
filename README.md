@@ -80,3 +80,10 @@ mv ~/.trinity/share/config/kdesktoprc ~/.trinity/share/config/kdesktoprc.bak
 ### Reiniciar el panel:
 
 dcop kicker kicker restart
+
+### Notas
+Componente	Paquete
+TDE completo	tde-trinity
+TDE base (mínimo)	tdebase-trinity
+Display manager	lightdm
+Keyring	trinity-keyring
