@@ -78,6 +78,8 @@ mv ~/.trinity/share/config/kdesktoprc ~/.trinity/share/config/kdesktoprc.bak
 
 dcop kicker kicker restart
 
+⚠️ TDM es el DM nativo de TDE, pero LightDM funciona perfectamente y es más estable a largo plazo.
+
 ### Notas
 Componente	Paquete
 TDE completo	tde-trinity
