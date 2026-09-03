@@ -134,6 +134,10 @@ Reiniciar el panel:
 
 -KDE-Look → kde-look.org — la original de KDE 3, muchos temas siguen siendo compatibles.
 
+### Cambiar el gestor de archivos [opcional]
+
+⚠️xdg-mime default thunar.desktop inode/directory⚠️
+
 # ⚠️ Eliminar TDE ⚠️
 
 # 1. Quitar los paquetes de TDE
