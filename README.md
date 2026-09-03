@@ -1,6 +1,3 @@
-# devuan-tde
-devuan (excalibur) + trinity desktop
-
 # Trinity Desktop Environment en Devuan Excalibur
 
 Instalación limpia de **Trinity Desktop (TDE)** sobre **Devuan 6 (Excalibur)** con **LightDM** como display manager.
