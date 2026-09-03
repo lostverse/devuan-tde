@@ -127,6 +127,36 @@ Reiniciar el panel:
 
 > ⚠️ **TDM** es el DM nativo de TDE, pero LightDM funciona perfectamente y es más estable a largo plazo.
 
+# ⚠️ Eliminar TDE ⚠️
+
+# 1. Quitar los paquetes de TDE
+sudo apt-get remove tde-trinity tdebase-trinity
+
+# 2. Limpiar dependencias que se instalaron "por arrastre"
+sudo apt-get autoremove --purge
+
+# 3. Quitar keyring y repo
+sudo dpkg -r trinity-keyring
+sudo rm /etc/apt/sources.list.d/tde.list
+
+# 4. Actualizar
+sudo apt-get update   
+
+autoremove --purge es la clave: quita todos los paquetes que apt instaló automáticamente como dependencias de TDE y que ya no usa nada más.
+
+# Ver si queda algún paquete tde-*
+dpkg -l | grep tde
+
+# Borrar configuración residual (opcional, irreversible)
+sudo find /etc -name "*tde*" -delete
+sudo find /usr -name "*tde*" -delete   
+
+⚠️ Con el find ten cuidado: solo bórralo si estás 100% seguro de que no tienes nada más que se llame tde.
+
+Y por último, tu config de usuario:
+
+rm -rf ~/.trinity
+
 ## Disclaimer
 
 > ⚠️ **Uso bajo tu propia responsabilidad**
