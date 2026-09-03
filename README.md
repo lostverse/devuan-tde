@@ -128,9 +128,11 @@ Reiniciar el panel:
 > ⚠️ **TDM** es el DM nativo de TDE, pero LightDM funciona perfectamente y es más estable a largo plazo.
 
 ### Encontrar temas para TDE.
-Pling → store.kde.org — busca en la sección "KDE 3.5 Themes" o "KDM3 Themes" (para TDM)
-trinity-look.org → opendesktop.org/s/Trinity — la "KDE-Look" dedicada a TDE, con temas de deKorator, Karamba, splash screens, esquemas de color, etc.
-KDE-Look → kde-look.org — la original de KDE 3, muchos temas siguen siendo compatibles.
+-Pling → store.kde.org — busca en la sección "KDE 3.5 Themes" o "KDM3 Themes" (para TDM).
+
+-trinity-look.org → opendesktop.org/s/Trinity — la "KDE-Look" dedicada a TDE, con temas de deKorator, Karamba, splash screens, esquemas de color, etc.
+
+-KDE-Look → kde-look.org — la original de KDE 3, muchos temas siguen siendo compatibles.
 
 # ⚠️ Eliminar TDE ⚠️
 
