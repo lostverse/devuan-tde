@@ -42,4 +42,4 @@ Comandos útiles:
 Acción	                  Comando
 Listar apps instaladas	  flatpak list --app
 Actualizar todo	          flatpak update
-Desinstalar Pinta	flatpak uninstall com.github.PintaProject.Pinta
+Desinstalar Pinta	        flatpak uninstall com.github.PintaProject.Pinta
