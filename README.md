@@ -60,7 +60,7 @@ O por línea de comandos:
 > export LANG=es_ES.UTF-8   
 > ```
 ## Notas
-Como en muchos proyectos de FOSS, probablemente hay componentes incompletos o caducados.
+Como en muchos proyectos de FOSS, probablemente hay componentes incompletos o caducados, respecto a la traducción .
 
 ### 6. Reiniciar
 
