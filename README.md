@@ -134,9 +134,49 @@ Reiniciar el panel:
 
 -KDE-Look → kde-look.org — la original de KDE 3, muchos temas siguen siendo compatibles.
 
-### Cambiar el gestor de archivos [opcional]
+# ⚠️Cambiar el gestor de archivos [opcional]⚠️
 
-⚠️xdg-mime default thunar.desktop inode/directory⚠️
+# Gestión del gestor de archivos por defecto en Trinity Desktop (Devuan)
+
+## Verificar el gestor activo
+
+    xdg-mime query default inode/directory
+
+Debería devolver algo como `konqueror.desktop` o `thunar.desktop`.
+
+## Cambiar a Konqueror
+
+### 1. Desde línea de comandos
+
+    xdg-mime default konqueror.desktop inode/directory
+
+### 2. Desde el Panel de Control de TDE
+
+1. **Panel de control → Componentes de TDE → Asociaciones de archivos**
+2. Busca `inode` → `directory`
+3. Asegúrate de que **Konqueror** esté en primer lugar
+4. En la pestaña **Incrustado (Embedding)**, verifica que Konqueror también esté arriba
+
+> **Truco:** Si el cambio no se aplica, borra la entrada `inode/directory` de la lista y re-creala desde cero con Konqueror arriba. A veces la lista se corrompe internamente y no se actualiza solo moviendo el orden.
+
+## Cambiar a Thunar
+
+    xdg-mime default thunar.desktop inode/directory
+
+Y repite los pasos del Panel de Control con Thunar en primer lugar.
+
+## Alternativas
+
+| Gestor | Paquetes | Notas |
+|--------|----------|-------|
+| **Konqueror** | `konqueror` | Gestor nativo de TDE, viene de base |
+| **Dolphin (TDE)** | `dolphin-trinity` | Variante de Dolphin adaptada a TDE |
+| **Thunar** | `thunar` | Gestor de XFCE, ligero |
+
+## Notas
+
+- TDE no tiene una opción única "gestor por defecto"; hay que mantener la consistencia entre `xdg-mime` y las asociaciones de TDE.
+- Si solo cambias uno de los dos, el otro puede seguir imponiéndose.   
 
 # ⚠️ Eliminar TDE ⚠️
 
