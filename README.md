@@ -176,7 +176,15 @@ Y repite los pasos del Panel de Control con Thunar en primer lugar.
 ## Notas
 
 - TDE no tiene una opción única "gestor por defecto"; hay que mantener la consistencia entre `xdg-mime` y las asociaciones de TDE.
-- Si solo cambias uno de los dos, el otro puede seguir imponiéndose.   
+- Si solo cambias uno de los dos, el otro puede seguir imponiéndose.
+### Abrir carpetas en la misma ventana (no en ventana nueva)
+
+1. Abre Konqueror
+2. **Settings → Configure Konqueror → Embedding**
+3. Marca **"Open file in embedded viewer"**
+
+> ⚠️ No confundir con "Open folders in separate windows" en Behaviour → Misc Options. Es la opción de Embedding la que controla si se abre en la misma ventana o en una nueva.   
+
 
 # ⚠️ Eliminar TDE ⚠️
 
