@@ -1,0 +1,38 @@
+Poner password a root...
+
+sudo passwd root   
+
+Te pedirá tu contraseña de usuario, y luego la nueva de root dos veces. Listo. 
+
+Si no tienes sudo configurado (poco probable), la alternativa es:
+
+su -
+passwd
+
+Pero normalmente sudo passwd root es lo que necesitas.
+
+###############################################################################
+
+1. Instalar Flatpak
+
+sudo apt update
+sudo apt install flatpak
+
+2. Añadir Flathub (el repo principal de apps Flatpak) 
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo   
+
+3. Añadir al PATH (para que los binarios de las apps aparezcan en el menú) 
+
+echo 'export PATH=$PATH:/var/lib/flatpak/exports/bin' >> ~/.bashrc
+source ~/.bashrc
+
+4. Instalar Pinta <-- OPCIONAL, programa de edicion de imagen.
+
+flatpak install flathub com.github.PintaProject.Pinta
+
+5. Lanzar
+
+flatpak run com.github.PintaProject.Pinta
+
+O desde el menú de aplicaciones (debería aparecer tras el source ~/.bashrc).
