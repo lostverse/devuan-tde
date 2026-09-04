@@ -36,3 +36,10 @@ flatpak install flathub com.github.PintaProject.Pinta
 flatpak run com.github.PintaProject.Pinta
 
 O desde el menú de aplicaciones (debería aparecer tras el source ~/.bashrc).
+
+Comandos útiles:
+
+Acción	                  Comando
+Listar apps instaladas	  flatpak list --app
+Actualizar todo	          flatpak update
+Desinstalar Pinta	flatpak uninstall com.github.PintaProject.Pinta
