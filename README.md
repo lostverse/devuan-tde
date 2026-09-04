@@ -88,7 +88,7 @@ Si no existe, créalo:
 > EOF
 > ```
 
-## Reset a valores de fábrica
+## ⚠️ Reset a valores de fábrica ⚠️
 
 ### Reset total
 
@@ -115,22 +115,6 @@ Reiniciar el panel:
 
 > ```bash
 > dcop kicker kicker restart
-> ```
-
-## Ajustes opcionales
-
-### Desactivar monitoreo de batería (laptop sin batería)
-
-> ```bash
-> sudo service upower stop
-> sudo update-rc.d upower disable
-> sudo apt remove tdepowersave-trinity
-> ```
-
-### Quitar keyring de Brave
-
-> ```bash
-> echo "--password-store=basic" > ~/.config/brave-flags.conf
 > ```
 
 ## Notas
