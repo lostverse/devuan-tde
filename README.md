@@ -45,7 +45,24 @@ Instalación limpia de **Trinity Desktop (TDE)** sobre **Devuan 6 (Excalibur)** 
 
 Elige **lightdm** como display manager predeterminado.
 
-### 5. Reiniciar
+### 5. Cambiar idioma 
+
+> ```bash
+> sudo apt install tde-i18n-es-trinity
+> ```
+
+Después, para activarlo:
+
+Panel de control → Regional & Accessibility → Country/Region & Language → selecciona Spanish
+O por línea de comandos:
+
+> ```bash
+> export LANG=es_ES.UTF-8   
+> ```
+## Notas
+Como en muchos proyectos de FOSS, probablemente hay componentes incompletos o caducados.
+
+### 6. Reiniciar
 
 > ```bash
 > sudo reboot
