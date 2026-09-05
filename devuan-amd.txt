@@ -1,0 +1,7 @@
+Config especifica para AMD. 
+
+# Forzar amdgpu en vez de radeon:
+echo "options amdgpu si_support=1" | sudo tee /etc/modprobe.d/amdgpu.conf
+echo "blacklist radeon" | sudo tee /etc/modprobe.d/blacklist-radeon.conf
+sudo update-initramfs -u
+sudo reboot   
