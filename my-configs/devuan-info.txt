@@ -1,0 +1,74 @@
+###############################################################################
+LA SIGUIENTE INFO ES OPCIONAL
+###############################################################################
+
+Poner password a root:
+
+sudo passwd root   
+
+Te pedirá tu contraseña de usuario, y luego la nueva de root dos veces. Listo. 
+
+Si no tienes sudo configurado (poco probable), la alternativa es:
+
+su -
+passwd
+
+Pero normalmente sudo passwd root es lo que necesitas.
+
+###############################################################################
+
+1. Instalar Flatpak
+
+sudo apt update
+sudo apt install flatpak
+
+2. Añadir Flathub (el repo principal de apps Flatpak) 
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo   
+
+3. Añadir al PATH (para que los binarios de las apps aparezcan en el menú) 
+
+echo 'export PATH=$PATH:/var/lib/flatpak/exports/bin' >> ~/.bashrc
+source ~/.bashrc
+
+4. Instalar Pinta <-- OPCIONAL, programa de edicion de imagen.
+
+flatpak install flathub com.github.PintaProject.Pinta
+
+5. Lanzar
+
+flatpak run com.github.PintaProject.Pinta
+
+O desde el menú de aplicaciones (debería aparecer tras el source ~/.bashrc).
+
+Comandos útiles:
+
+Acción	                  Comando
+Listar apps instaladas	  flatpak list --app
+Actualizar todo	          flatpak update
+Desinstalar Pinta	        flatpak uninstall com.github.PintaProject.Pinta
+
+###############################################################################
+Instalar gestor de archivos.
+
+sudo apt install pcmanfm-qt   
+
+xdg-mime default pcmanfm.desktop inode/directory
+
+El .desktop se llama pcmanfm.desktop (sin el -qt), aunque el paquete se llame pcmanfm-qt.
+
+Para verificar que se ha aplicado:
+
+xdg-mime query default inode/directory
+
+Debería devolver pcmanfm.desktop.
+
+Y si quieres que también sea el default para "abrir en file manager" desde el menú contextual de cualquier otro file manager o del explorador:
+
+xdg-mime default pcmanfm.desktop x-directories 
+
+sudo apt install elementary-icon-theme
+
+sudo apt install breeze-icon-theme
+
+Luego en PCManFM-Qt: Editar → Preferencias → File Manager → elige el tema de iconos (Breeze, Elementary, Hicolor...).
