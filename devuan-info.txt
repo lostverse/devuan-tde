@@ -1,4 +1,4 @@
-Poner password a root...
+Poner password a root:
 
 sudo passwd root   
 
@@ -43,3 +43,26 @@ Acción	                  Comando
 Listar apps instaladas	  flatpak list --app
 Actualizar todo	          flatpak update
 Desinstalar Pinta	        flatpak uninstall com.github.PintaProject.Pinta
+
+###############################################################################
+Instalar gestor de archivos.
+
+sudo apt install pcmanfm-qt   
+
+xdg-mime default pcmanfm.desktop inode/directory
+
+El .desktop se llama pcmanfm.desktop (sin el -qt), aunque el paquete se llame pcmanfm-qt.
+
+Para verificar que se ha aplicado:
+
+xdg-mime query default inode/directory
+
+Debería devolver pcmanfm.desktop.
+
+Y si quieres que también sea el default para "abrir en file manager" desde el menú contextual de cualquier otro file manager o del explorador:
+
+xdg-mime default pcmanfm.desktop x-directories 
+
+sudo apt install elementary-icon-theme
+
+Luego en PCManFM-Qt: Editar → Preferencias → File Manager → elige el tema de iconos (Breeze, Elementary, Hicolor...).
