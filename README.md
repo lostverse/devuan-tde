@@ -230,6 +230,6 @@ rm -rf ~/.trinity
 > - Problemas de compatibilidad, seguridad o rendimiento.
 > - Cualquier uso que se le dé a este material.
 >
-> Usar este README implica que asumes **todos los riesgos** asociados. Haz siempre una copia de seguridad antes de modificar tu sistema.
+> Usar este README asi como los archivos txt implica que asumes **todos los riesgos** asociados. Haz siempre una copia de seguridad antes de modificar tu sistema.
 >
 > Si algo sale mal, no me lo reproches. 🤷   
