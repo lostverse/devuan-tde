@@ -65,4 +65,6 @@ xdg-mime default pcmanfm.desktop x-directories
 
 sudo apt install elementary-icon-theme
 
+sudo apt install breeze-icon-theme
+
 Luego en PCManFM-Qt: Editar → Preferencias → File Manager → elige el tema de iconos (Breeze, Elementary, Hicolor...).
