@@ -173,6 +173,7 @@ Y repite los pasos del Panel de Control con Thunar en primer lugar.
 | **Konqueror** | `konqueror` | Gestor nativo de TDE, viene de base |
 | **Dolphin (TDE)** | `dolphin-trinity` | Variante de Dolphin adaptada a TDE |
 | **Thunar** | `thunar` | Gestor de XFCE, ligero |
+| **PCManFM-Qt** | `pcmanfm-qt` | Tipo total commander |
 
 ## Notas
 
