@@ -135,7 +135,7 @@ Reiniciar el panel:
 
 -KDE-Look → kde-look.org — la original de KDE 3, muchos temas siguen siendo compatibles.
 
-# ⚠️Cambiar el gestor de archivos [opcional]⚠️
+# ⚠️Cambiar el gestor de archivos [OPCIONAL]⚠️
 
 # Gestión del gestor de archivos por defecto en Trinity Desktop (Devuan)
 
@@ -154,26 +154,26 @@ Reiniciar el panel:
 
 Debería devolver algo como `konqueror.desktop` o `thunar.desktop`.
 
-## Cambiar a Konqueror
+## Cambiar a Thunar
 
 ### 1. Desde línea de comandos
 
-    xdg-mime default konqueror.desktop inode/directory
+    xdg-mime default thunar.desktop inode/directory
 
 ### 2. Desde el Panel de Control de TDE
 
 1. **Panel de control → Componentes de TDE → Asociaciones de archivos**
 2. Busca `inode` → `directory`
-3. Asegúrate de que **Konqueror** esté en primer lugar
+3. Asegúrate de que **Thunar** esté en primer lugar
 4. En la pestaña **Incrustado (Embedding)**, verifica que Konqueror también esté arriba
 
-> **Truco:** Si el cambio no se aplica, borra la entrada `inode/directory` de la lista y re-creala desde cero con Konqueror arriba. A veces la lista se corrompe internamente y no se actualiza solo moviendo el orden.
+> **Truco:** Si el cambio no se aplica, borra la entrada `inode/directory` de la lista y re-creala desde cero con Thunar arriba. A veces la lista se corrompe internamente y no se actualiza solo moviendo el orden.
 
-## Cambiar a Thunar
+## Cambiar a PCMan
 
     xdg-mime default thunar.desktop inode/directory
 
-Y repite los pasos del Panel de Control con Thunar en primer lugar.
+Y repite los pasos del Panel de Control con PCman en primer lugar.
 
 ## Notas
 
