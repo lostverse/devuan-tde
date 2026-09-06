@@ -2,7 +2,7 @@
 
 ## 📖 Esto va dedicado a usarse en PC's de poco rendimiento, es lo que yo uso en mi laptop.
 
-![720Pp](capturas/devuan-tde-desktop.jpg)
+![720p](capturas/devuan-tde-desktop.jpg)
 
 >  ✅ **Fecha de validación:** Septiembre 2026  
 >  ✅ **Hardware probado:** HP Laptop AMD "Dual Core" 
