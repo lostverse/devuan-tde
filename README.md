@@ -1,5 +1,7 @@
 # Trinity Desktop Environment en Devuan Excalibur
 
+![720Pp](capturas/devuan-tde-desktop.jpg)
+
 > **Fecha de validación:** Septiembre 2026  
 > **Hardware probado:** HP Laptop AMD "Dual Core"
 
