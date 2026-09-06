@@ -7,7 +7,7 @@ Instalación limpia de **Trinity Desktop (TDE)** sobre **Devuan 6 (Excalibur)** 
 
 ## Requisitos
 
-- Devuan Excalibur (6) [init = openRC]
+- Devuan Excalibur (6) [init = OpenRC]
 - Conexión a internet
 - Usuario con permisos de `sudo` 
 
