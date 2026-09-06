@@ -1,19 +1,19 @@
-# Trinity Desktop Environment en Devuan Excalibur
+# 🚀 Trinity Desktop Environment en Devuan Excalibur
 
 ![720Pp](capturas/devuan-tde-desktop.jpg)
 
-> **Fecha de validación:** Septiembre 2026  
-> **Hardware probado:** HP Laptop AMD "Dual Core" 12GB RAM
+>  ✅ **Fecha de validación:** Septiembre 2026  
+>  ✅ **Hardware probado:** HP Laptop AMD "Dual Core" 12GB RAM
 
-Instalación limpia de **Trinity Desktop (TDE)** sobre **Devuan 6 (Excalibur)** con **LightDM** como display manager.
+# Instalación limpia de **Trinity Desktop (TDE)** sobre **Devuan 6 (Excalibur)** con **LightDM** como display manager.
 
-## Requisitos
+## 🔧 Requisitos
 
 - Devuan Excalibur (6) [OpenRC "OPCIONAL"] 
 - Conexión a internet
 - Usuario con permisos de `sudo` 
 
-## Instalación
+## 📦 Instalación manual (lo que uso yo)
 
 ### 1. Keyring de Trinity
 
@@ -64,7 +64,7 @@ O por línea de comandos:
 > ```bash
 > export LANG=es_ES.UTF-8   
 > ```
-## Notas
+## 📝 Notas
 Como en muchos proyectos de FOSS, probablemente hay componentes incompletos o caducados, respecto a la traducción .
 
 ### 6. Reiniciar
@@ -122,7 +122,7 @@ Reiniciar el panel:
 > dcop kicker kicker restart
 > ```
 
-## Notas
+## 📝 Notas
 
 | Componente | Paquete |
 |---|---|
@@ -180,7 +180,7 @@ Debería devolver algo como `konqueror.desktop` o `thunar.desktop`.
 
 Y repite los pasos del Panel de Control con PCman en primer lugar.
 
-## Notas
+## 📝 Notas
 
 - TDE no tiene una opción única "gestor por defecto"; hay que mantener la consistencia entre `xdg-mime` y las asociaciones de TDE.
 - Si solo cambias uno de los dos, el otro puede seguir imponiéndose.
@@ -224,7 +224,7 @@ Y por último, tu config de usuario:
 
 rm -rf ~/.trinity
 
-### Alternativa: Exe GNU/Linux
+### 📖 Alternativa: Exe GNU/Linux
 
 Si no quieres montar todo a mano, existe **Exe GNU/Linux**, una imagen live basada en
 Devuan + TDE con aplicaciones seleccionadas y herramientas de rescute.
@@ -242,7 +242,7 @@ Devuan + TDE con aplicaciones seleccionadas y herramientas de rescute.
 Si quieres un USB de rescate o probar el escritorio sin compromiso, Exe GNU/Linux
 es la opción más directa.   
 
-## Disclaimer
+## ⚠️ Disclaimer ⚠️
 
 > ⚠️ **Uso bajo tu propia responsabilidad**
 >
