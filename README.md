@@ -171,7 +171,7 @@ Debería devolver algo como `konqueror.desktop` o `thunar.desktop`.
 
 ## Cambiar a PCMan
 
-    xdg-mime default thunar.desktop inode/directory
+    xdg-mime default pcmanfm.desktop inode/directory
 
 Y repite los pasos del Panel de Control con PCman en primer lugar.
 
@@ -179,7 +179,8 @@ Y repite los pasos del Panel de Control con PCman en primer lugar.
 
 - TDE no tiene una opción única "gestor por defecto"; hay que mantener la consistencia entre `xdg-mime` y las asociaciones de TDE.
 - Si solo cambias uno de los dos, el otro puede seguir imponiéndose.
-### Abrir carpetas en la misma ventana (no en ventana nueva)
+
+### En Konqueror, abrir carpetas en la misma ventana (no en ventana nueva)
 
 1. Abre Konqueror
 2. **Settings → Configure Konqueror → Embedding**
