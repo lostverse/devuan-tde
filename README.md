@@ -66,6 +66,7 @@ O por línea de comandos:
 > ```
 ## 📝 Notas
 Como en muchos proyectos de FOSS, probablemente hay componentes incompletos o caducados, respecto a la traducción .
+💡 Puedes ayudar con la traducción -> https://mirror.git.trinitydesktop.org/weblate/ 
 
 ### 6. Reiniciar
 
