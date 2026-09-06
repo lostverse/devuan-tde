@@ -4,12 +4,13 @@
 
 > **Fecha de validación:** Septiembre 2026  
 > **Hardware probado:** HP Laptop AMD "Dual Core" 12GB RAM
+> **Devuan init = OpenRC**
 
 Instalación limpia de **Trinity Desktop (TDE)** sobre **Devuan 6 (Excalibur)** con **LightDM** como display manager.
 
 ## Requisitos
 
-- Devuan Excalibur (6) [init = OpenRC]
+- Devuan Excalibur (6) 
 - Conexión a internet
 - Usuario con permisos de `sudo` 
 
