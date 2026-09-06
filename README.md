@@ -1,5 +1,7 @@
 # 🚀 Trinity Desktop Environment en Devuan Excalibur
 
+## 📖 Esto va dedicado a usarse en PC's de poco rendimiento, es lo que yo uso en mi laptop.
+
 ![720Pp](capturas/devuan-tde-desktop.jpg)
 
 >  ✅ **Fecha de validación:** Septiembre 2026  
@@ -225,7 +227,7 @@ Y por último, tu config de usuario:
 
 rm -rf ~/.trinity
 
-### 📖 Alternativa: Exe GNU/Linux
+## 📖 Alternativa: Exe GNU/Linux
 
 Si no quieres montar todo a mano, existe **Exe GNU/Linux**, una imagen live basada en
 Devuan + TDE con aplicaciones seleccionadas y herramientas de rescute.
