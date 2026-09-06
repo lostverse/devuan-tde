@@ -207,6 +207,7 @@ sudo apt-get autoremove --purge
 
 # 3. Quitar keyring y repo
 sudo dpkg -r trinity-keyring
+
 sudo rm /etc/apt/sources.list.d/tde.list
 
 # 4. Actualizar
