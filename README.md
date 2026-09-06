@@ -139,6 +139,15 @@ Reiniciar el panel:
 
 # Gestión del gestor de archivos por defecto en Trinity Desktop (Devuan)
 
+## Alternativas
+
+| Gestor | Paquetes | Notas |
+|--------|----------|-------|
+| **Konqueror** | `konqueror` | Gestor nativo de TDE, viene de base |
+| **Dolphin (TDE)** | `dolphin-trinity` | Variante de Dolphin adaptada a TDE |
+| **Thunar** | `thunar` | Gestor de XFCE, ligero |
+| **PCManFM-Qt** | `pcmanfm-qt` | Tipo total commander |
+
 ## Verificar el gestor activo
 
     xdg-mime query default inode/directory
@@ -165,15 +174,6 @@ Debería devolver algo como `konqueror.desktop` o `thunar.desktop`.
     xdg-mime default thunar.desktop inode/directory
 
 Y repite los pasos del Panel de Control con Thunar en primer lugar.
-
-## Alternativas
-
-| Gestor | Paquetes | Notas |
-|--------|----------|-------|
-| **Konqueror** | `konqueror` | Gestor nativo de TDE, viene de base |
-| **Dolphin (TDE)** | `dolphin-trinity` | Variante de Dolphin adaptada a TDE |
-| **Thunar** | `thunar` | Gestor de XFCE, ligero |
-| **PCManFM-Qt** | `pcmanfm-qt` | Tipo total commander |
 
 ## Notas
 
