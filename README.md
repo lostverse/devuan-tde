@@ -1,7 +1,7 @@
 # Trinity Desktop Environment en Devuan Excalibur
 
 > **Fecha de validación:** Septiembre 2026  
-> **Hardware probado:** HP 15 db0023ns
+> **Hardware probado:** HP Laptop AMD "Dual Core"
 
 Instalación limpia de **Trinity Desktop (TDE)** sobre **Devuan 6 (Excalibur)** con **LightDM** como display manager.
 
