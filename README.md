@@ -227,7 +227,7 @@ Y por último, tu config de usuario:
 
 rm -rf ~/.trinity
 
-## 📖 Alternativa: Exe GNU/Linux
+## 💡 Alternativa: Exe GNU/Linux
 
 Si no quieres montar todo a mano, existe **Exe GNU/Linux**, una imagen live basada en
 Devuan + TDE con aplicaciones seleccionadas y herramientas de rescute.
