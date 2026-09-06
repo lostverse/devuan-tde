@@ -145,7 +145,7 @@ Reiniciar el panel:
 
 # ⚠️Cambiar el gestor de archivos [OPCIONAL]⚠️
 
-# Gestión del gestor de archivos por defecto en Trinity Desktop (Devuan)
+## Gestión del gestor de archivos por defecto en Trinity Desktop (Devuan)
 
 ## Alternativas
 
