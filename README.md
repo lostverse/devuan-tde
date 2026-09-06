@@ -224,6 +224,24 @@ Y por último, tu config de usuario:
 
 rm -rf ~/.trinity
 
+### Alternativa: Exe GNU/Linux
+
+Si no quieres montar todo a mano, existe **Exe GNU/Linux**, una imagen live basada en
+Devuan + TDE con aplicaciones seleccionadas y herramientas de rescute.
+
+| | Devuan + TDE (manual) | Exe GNU/Linux |
+|---|---|---|
+| **Tipo** | Instalación persistente | Live USB (persistente opcional) |
+| **Software no libre** | Tú decides | No incluido |
+| **Firmware propietario** | Opcional en la ISO | No incluido |
+| **Comunidad / soporte** | Devuan + TDE (amplia) | Proyecto independiente (pequeño) |
+| **Uso** | Día a día | Rescate / segunda opinión / probar sin tocar el disco |
+| **Herramientas extra** | Las que instales tú | Scripts de rescute incluidos |
+
+**En resumen:** si quieres un sistema para uso diario, instala Devuan + TDE a mano.
+Si quieres un USB de rescate o probar el escritorio sin compromiso, Exe GNU/Linux
+es la opción más directa.   
+
 ## Disclaimer
 
 > ⚠️ **Uso bajo tu propia responsabilidad**
