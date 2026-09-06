@@ -3,7 +3,7 @@
 ![720Pp](capturas/devuan-tde-desktop.jpg)
 
 >  ✅ **Fecha de validación:** Septiembre 2026  
->  ✅ **Hardware probado:** HP Laptop AMD "Dual Core" 12GB RAM
+>  ✅ **Hardware probado:** HP Laptop AMD "Dual Core" 
 
 # Instalación limpia de **Trinity Desktop (TDE)** sobre **Devuan 6 (Excalibur)** con **LightDM** como display manager.
 
