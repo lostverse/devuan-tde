@@ -33,4 +33,4 @@ Es un wrapper de web.whatsapp.com (Qt WebEngine). No añade riesgo extra.
 No hay telemetría propia ni backdoors.
 App lock con passcode incluido.
 
-¿Por qué no solo Signal? Porque estoy solo en Signal. XD
+¿Por qué no solo Signal? Porque estoy solo en Signal. O_O
