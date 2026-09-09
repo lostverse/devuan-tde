@@ -8,11 +8,30 @@ Cliente de escritorio para WhatsApp Web en Linux. Escrito en C++ con Qt 6
 
 ### Instalación
 
-
 ## Flatpak (recomendado, devuan no trae snap de base)
 
-flatpak install flathub com.ktechpit.whatsie
+### 1. Instalar Flatpak
+```bash
+sudo apt update
+```
+```bash
+sudo apt install flatpak
+```
 
+### 2. Añadir Flathub (el repo principal de apps Flatpak) 
+```bash
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo   
+```
+### 3. Añadir al PATH (para que los binarios de las apps aparezcan en el menú) 
+```bash
+echo 'export PATH=$PATH:/var/lib/flatpak/exports/bin' >> ~/.bashrc
+```
+```bash
+source ~/.bashrc
+```
+```bash
+flatpak install flathub com.ktechpit.whatsie
+```
 ---
 
 **Opciones de privacidad**
