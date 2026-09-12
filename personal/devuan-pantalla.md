@@ -1,0 +1,141 @@
+
+# ⚠️ ADVERTENCIA CONFIGUARCIÓN PERSONAL 
+---
+
+Info :
+```
+xrandr
+```
+Screen 0: minimum 320 x 200, current 1280 x 800, maximum 16384 x 16384
+eDP connected primary 1280x800+0+0 (normal left inverted right x axis y axis) 344mm x 193mm
+   1366x768      60.00 +  40.00  
+   1280x720      60.00  
+   1024x768      60.00  
+   800x600       60.00  
+   640x480       60.00 
+   1064x800_40.00  39.84  
+   1064x800_60.00  59.78  
+   1064x800_70.00  69.90  
+   1064x800_75.00  74.79  
+   1280x800_40.00  39.90  
+   1280x800_60.00  59.81  
+   1280x800_70.00  69.82* 
+ 
+HDMI-A-0 disconnected (normal left inverted right x axis y axis)
+DisplayPort-0 disconnected (normal left inverted right x axis y axis)
+ 
+ ---
+
+Scaling mode a Full (stretch) Para 4:3
+
+xrandr --output eDP --set 'scaling mode' 'Full'
+
+Verificar
+xrandr --verbose | grep -A1 "scaling mode"
+
+Debería decir scaling mode: Full
+
+Permanente en ~/.xprofile
+
+#!/bin/sh
+xrandr --output eDP --set 'scaling mode' 'Full'
+
+---
+
+# Custom resolution (1064x800) 4:3
+
+cvt 1064 800 40
+#1064x800 39.84 Hz (CVT) hsync: 32.75 kHz; pclk: 43.75 MHz
+Modeline "1064x800_40.00"   43.75  1064 1096 1200 1336  800 803 813 822 -hsync +vsync
+
+xrandr --newmode "1064x800_40.00"   43.75  1064 1096 1200 1336  800 803 813 822 -hsync +vsync
+xrandr --addmode eDP "1064x800_40.00"
+
+cvt 1064 800 60
+#1064x800 59.78 Hz (CVT) hsync: 49.67 kHz; pclk: 68.75 MHz
+Modeline "1064x800_60.00"   68.75  1064 1120 1224 1384  800 803 813 831 -hsync +vsync
+
+xrandr --newmode "1064x800_60.00"   68.75  1064 1120 1224 1384  800 803 813 831 -hsync +vsync
+xrandr --addmode eDP "1064x800_60.00"
+
+cvt 1064 800 70
+Modeline "1064x800_70.00"   82.75  1064 1128 1240 1416  800 803 813 836 -hsync +vsync
+#1064x800 69.90 Hz (CVT) hsync: 58.44 kHz; pclk: 82.75 MHz
+ 
+xrandr --newmode "1064x800_70.00"   82.75  1064 1128 1240 1416  800 803 813 836 -hsync +vsync
+xrandr --addmode eDP "1064x800_70.00"
+
+cvt 1064 800 75
+#1064x800 74.79 Hz (CVT) hsync: 62.68 kHz; pclk: 88.75 MHz
+Modeline "1064x800_75.00"   88.75  1064 1128 1240 1416  800 803 813 838 -hsync +vsync
+
+xrandr --newmode "1064x800_75.00"   88.75  1064 1128 1240 1416  800 803 813 838 -hsync +vsync
+xrandr --addmode eDP "1064x800_75.00"
+
+Permanente en ~/.xprofile
+```
+#!/bin/sh
+xrandr --output eDP --set 'scaling mode' 'Full'
+
+xrandr --newmode "1064x800_40.00"   43.75  1064 1096 1200 1336  800 803 813 822 -hsync +vsync
+xrandr --addmode eDP "1064x800_40.00"
+
+xrandr --newmode "1064x800_60.00"   68.75  1064 1120 1224 1384  800 803 813 831 -hsync +vsync
+xrandr --addmode eDP "1064x800_60.00"
+
+xrandr --newmode "1064x800_70.00"   82.75  1064 1128 1240 1416  800 803 813 836 -hsync +vsync
+xrandr --addmode eDP "1064x800_70.00"
+
+xrandr --newmode "1064x800_75.00"   88.75  1064 1128 1240 1416  800 803 813 838 -hsync +vsync
+xrandr --addmode eDP "1064x800_75.00"
+```
+---
+# Custom resolution 2 (1280x800) 16:10
+
+cvt 1280 800 40
+#1280x800 39.90 Hz (CVT) hsync: 32.80 kHz; pclk: 53.00 MHz
+Modeline "1280x800_40.00"   53.00  1280 1320 1448 1616  800 803 809 822 -hsync +vsync
+
+xrandr --newmode "1280x800_40.00"   53.00  1280 1320 1448 1616  800 803 809 822 -hsync +vsync
+xrandr --addmode eDP "1280x800_40.00"
+
+cvt 1280 800 60
+#1280x800 59.81 Hz (CVT 1.02MA) hsync: 49.70 kHz; pclk: 83.50 MHz
+Modeline "1280x800_60.00"   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync
+
+xrandr --newmode "1280x800_60.00"   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync
+xrandr --addmode eDP "1280x800_60.00"
+
+cvt 1280 800 70
+#1280x800 69.82 Hz (CVT) hsync: 58.37 kHz; pclk: 99.00 MHz
+Modeline "1280x800_70.00"   99.00  1280 1360 1488 1696  800 803 809 836 -hsync +vsync
+
+xrandr --newmode "1280x800_70.00"   99.00  1280 1360 1488 1696  800 803 809 836 -hsync +vsync
+xrandr --addmode eDP "1280x800_70.00"
+
+Permanente en ~/.xprofile
+```
+#!/bin/sh
+xrandr --output eDP --set 'scaling mode' 'Full'
+
+xrandr --newmode "1064x800_40.00"   43.75  1064 1096 1200 1336  800 803 813 822 -hsync +vsync
+xrandr --addmode eDP "1064x800_40.00"
+
+xrandr --newmode "1064x800_60.00"   68.75  1064 1120 1224 1384  800 803 813 831 -hsync +vsync
+xrandr --addmode eDP "1064x800_60.00"
+
+xrandr --newmode "1064x800_70.00"   82.75  1064 1128 1240 1416  800 803 813 836 -hsync +vsync
+xrandr --addmode eDP "1064x800_70.00"
+
+xrandr --newmode "1064x800_75.00"   88.75  1064 1128 1240 1416  800 803 813 838 -hsync +vsync
+xrandr --addmode eDP "1064x800_75.00"
+
+xrandr --newmode "1280x800_40.00"   53.00  1280 1320 1448 1616  800 803 809 822 -hsync +vsync
+xrandr --addmode eDP "1280x800_40.00"
+
+xrandr --newmode "1280x800_60.00"   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync
+xrandr --addmode eDP "1280x800_60.00"
+
+xrandr --newmode "1280x800_70.00"   99.00  1280 1360 1488 1696  800 803 809 836 -hsync +vsync
+xrandr --addmode eDP "1280x800_70.00"
+```
